@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Coloring and style</title>
+		<meta charset = "utf-8">
+	</head>
+		<style>
+		p {
+			color: blue;
+			text-align:left;
+		}
+		</style>
+	</head>		
+	
+</html>	
