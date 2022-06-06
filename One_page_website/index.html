@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1">
+		<title>PNW Adventures | aerospace </title>
+		<link rel="stylesheet" type="text/css" href="./css/style2.css">
+		<script src = "JS/one_page_website.js"></script>
+	</head>
+	<body background-color=#f0ffff>
+	
+		<!-- NAV -->
+		<div>
+			<div>
+				<ul class="nav">
+					<div class="logo">
+					   PNW Adventures
+					</div>
+						
+					<li><a href="#home">home</a></li>
+					<li><a href="#gallery">gallery</a></li>
+					<li><a href="#video" >video</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
+				
+				<div class="banner">
+					<img class="banner-image" src="img/banner_1.jpg">
+					
+				</div>
+			</div>
+		</div>
+		<!-- HOME -->
+		<div id="home">
+			<div>
+				<div>
+					PNW Adventures<br>
+					All rides listed here are available in all three biplane configuration.  Our stearman carries one passsenger, the Waco UPF-7 open cockpit<br>
+					airplane carries two passengers in the front of the pilot.  The cabin waco carries three passengers.  Weight limitation is 200 lbs.
+					
+			    </div>				
+			</div>
+		</div>
+		<!--END HOME -->
+			
+		<!-- Images used to open the lightbox -->
+		<div class = "row">
+			<div class = "column">
+				<img src = "./img/Bi_plane_1.jpg" onclick ="openModal(); currentSlide(1)" class = "hover-shadow cursor">
+			</div>
+			<div class = "column">
+				<img src = "./img/Bi_plane_2.jpg" onclick ="openModal(); currentSlide(2)" class = "hover-shadow cursor">
+			</div>
+			<div class = "column">
+				<img src = "./img/Bi_plane_4.jpg" onclick ="openModal(); currentSlide(3)" class = "hover-shadow cursor">
+			</div>
+		</div>
+
+		<!--The modal/Lightbox-->
+		<div id ="myModal" class = "modal">
+		  <span class = "close cursor" onclick = "closeModal()">&times;</span>
+		  <div class = "modal-content">
+
+			<div class = "mySlides">
+				<div class = "numbertext"> 1 / 3 </div>
+				<img src = "./img/Bi_plane_1.jpg" style = "width:100%">
+			</div>
+
+			<div class = "mySlides">
+				<div class = "numbertext"> 2 / 3 </div>
+				<img src = "./img/Bi_plane_2.jpg" style = "width:100%">
+			</div>
+
+			<div class = "mySlides">
+				<div class = "numbertext"> 3 / 3 </div>
+				<img src = "./img/Bi_plane_4.jpg" style = "width:100%">
+			</div>
+
+			<!--Next/previous controls-->
+			<a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+			<a class = "next" onclick = "plusSlides(1)">&#10095;</a>
+
+			<!--Caption Text-->
+			<div class = "caption-container">
+				<p id = "caption"></p>
+			</div>
+
+			<!--Thumbnail image controls-->
+			<div class = "column">
+				<img class = "demo cursor" src = ".img/Bi_plane_1.jpg" style="width:100%" onclick = "currentSlide(1)" alt = "Our Waco UPF-7">
+			</div>
+            
+			<div class = "column">
+				<img class = "demo cursor" src = ".img/Bi_plane_2.jpg" style="width:100%" onclick = "currentSlide(1)" alt = "Our Waco UPF-7">
+			</div>
+
+			<div class = "column">
+				<img class = "demo cursor" src = ".img/Bi_plane_4.jpg" style="width:100%" onclick = "currentSlide(1)" alt = "Our Waco UPF-7">
+			</div>
+
+
+
+		  </div>	
+		</div>
+			
+		<!--Video Gallery -->
+		<section>
+			<div id="video">
+				<h1>Video Gallery</h1>
+				<div>
+					<!--VIDEO-CONTAINER-->
+				<div>
+					<div>
+						 <iframe width="935" height="570" src="https://www.youtube.com/embed/lsUnPigl85E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						 <p> First person camera so you can feel the excitement from your personal computer!!<p>
+					</div>
+				</div>
+			</div>
+		</section>		
+		 <!--END GALLERY-->
+		 
+		 <!--RSVP-->
+		 <section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Reservations</h1>
+					<div class="reservation">
+						<h2><span>Beautiful scenery and thrills in the sky are just on the horizon.</span>
+							<br />Reserve your flight today!
+						</h2>
+						<p class="rsvp-text">
+							Please provide us with your basic contact information.
+						</p>
+						<div class="form-rsvp">
+							<form action=""method="post">
+								<input class="rsvp" type="text" value="First Name">
+								<input class="rsvp" type="text" value="Last Name">
+								<input class="rsvp" type="text" value="Email Address">
+								<input class="rsvp" type="text" value="Phone Number">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<input type="submit" value="submit">
+								</div>	
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--END RSVP-->
+		
+		<!--FOOTER -->
+		<div>
+			www.PNW adventures &nbsp;|&nbsp; &copy; 2022
+		</div>
+		<!--END FOOTER-->	
+			
+
+	</body>
+</html>	
+	
+	
+	
+	
